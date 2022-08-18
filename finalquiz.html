@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro">
+    <h1> Are you a sports fanatic? </h1>
+    <h2 id="heading"> please enter your full name</h2>
+    </div>
+
+<div id="greetingInput">
+    <input id="name">
+    <button onclick="greeting()"> enter </button>
+</div>
+
+<div id="quiz">
+    <h3 id="question"> Question 1: Which female tennis player has won the highest number of Grand Slams? </h3>
+    <img src="question1.JPG" alt="banner" width="400" height="300">
+    <br>
+    <div id="answerA"> a: Serena Williams </div>
+    <div id="answerB"> b: Venus Williams </div>
+    <div id="answerC"> c: Martina Navratilova </div>
+    <div id="answerD"> d: Maria Sakkari </div>
+
+<br>
+
+    <h3> Question 2: What does WWE stand for? </h3>
+    <img src="wwe.JPG" alt="banner" width="400" height="300">
+    <br>
+    <div id="answerA"> a: Wonder Writing Entertainment </div>
+    <div id="answerB"> b: World Wrestling Entertainment </div>
+    <div id="answerC"> c. World Waterpolo Entertainment</div>
+
+<br>
+
+    <h3> Question 3: How many Olympic rings are there? </h3>
+    <img src="rings.JPG" alt="banner" width="400" height="300">
+    <br>
+    <div id="answerA"> a. four olympic rings</div>
+    <div id="answerB"> b. six olympic rings </div>
+    <div id="answerC"> c. seven olympic rings  </div>
+    <div id="answerD"> d. five olympic rings </div>
+
+<br>
+<br>
+
+<button> Sumbit Quiz! </button> 
+
+<br>
+
+</body>
+
+<script>
+    let name = document.querySelector("#name")
+    let heading = document.querySelector("#heading")
+    let greetingInput = document.querySelector("#greetingInput")
+    let quiz = document.querySelector("#quiz")
+
+
+    quiz.style.display = "none"
+
+function greeting(){
+    heading.innterHTML =""
+    heading.innerHTML = "Kia Ora! " + name.value + ", Good Luck."
+    greetingInput.style.display ="none"
+    quiz.style.display = "block";
+
+}
+
+
+</script>
+
+<style>
+    h1{
+    text-align: center
+}
+body {
+  background-color: #E7F6F2;
+}
+
+h2{
+    text-align: center;
+    font-family: Arial;
+    font-size: small;
+    color: black;
+}
+
+#intro {
+    text-align: center;
+}
+
+#greetingInput {text-align: center;}
+
+#quiz {
+    text-align: center;
+    color: black;
+
+}
+
+
+</style>
